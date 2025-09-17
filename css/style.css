@@ -41,7 +41,23 @@ video {
   margin: 1.5rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
+.section {
+  background-color: whitesmoke;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#teooria iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  display: block;
+  margin: 1.5rem auto;  /* keskele */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 @media (max-width: 850px) {
   main {
     padding: 1rem;
@@ -56,4 +72,63 @@ video {
   img {
     width: 150px;
   }
+}
+.hero {
+  background-image: url("../images/kusti.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background-color: #d4a373;
+  color: #3e2f1c;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #fff8f0;
+  color: #2a1d10;
+}
+.button-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.custom-button {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #ccc;
+}
+
+.custom-button:hover {
+  background-color: #add8e6;
+  color: white;
 }
