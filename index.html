@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="et">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Õppeveeb HTML-i õppimiseks">
     <title>Õppeveeb</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <a class="skip-link" href="#content">Liigu sisu juurde</a>
+
     <header>
       <h1>Üheleheline Õppeveeb</h1>
       <nav aria-label="Põhinavigatsioon">
@@ -16,67 +19,81 @@
         <a href="#kontakt" class="custom-button">Kontakt</a>
       </nav>
       <div class="hero">
-    <h2>Õpi HTML-i lihtsalt ja kiirelt</h2>
-    <p>See veebileht tutvustab HTML-i põhitõdesid algajatele.</p>
-    <a href="#sissejuhatus" class="cta-btn">Alusta õppimist</a>
-  </div>
+        <h2>Õpi HTML-i lihtsalt ja kiirelt</h2>
+        <p>See veebileht tutvustab HTML-i põhitõdesid algajatele.</p>
+        <a href="#sissejuhatus" class="cta-btn">Alusta õppimist</a>
+      </div>
     </header>
-    <main>
+
+    <main id="content">
+
       <section id="sissejuhatus" class="section">
         <h2>Sissejuhatus</h2>
         <h3>Mis on HTML?</h3>
         <p>
           HTML on veebilehtede põhiline keel, mida kasutatakse selleks, et
-          määrata lehe sisu ja struktuur. Selle abil öeldakse arvutile, millised
-          osad on pealkirjad, lõigud, lingid, pildid või muud elemendid. HTML ei
-          tegele kujundamise ega värvidega, vaid ainult selle määramisega, mis
-          tüüpi sisu kuskil asub. See on justkui vundament, mille peale
-          ehitatakse ülejäänud veebileht. HTML-i mõistmine on vajalik, kui
-          soovid luua või muuta veebilehti.
+          määrata lehe sisu ja struktuur...
         </p>
       </section>
+
       <section id="teooria" class="section">
         <h2>Teooria</h2>
         <h3>HTML tähendus</h3>
         <p>
           HTML tähendab HyperText Markup Language, eesti keeles hüperteksti
-          märgistuskeel. See on keel, mida kasutatakse veebilehtede loomiseks ja
-          struktuuri määratlemiseks. HTML ei ole programmeerimiskeel, vaid
-          märgistuskeel - see tähendab, et see kirjeldab, milline sisu on lehel
-          ja kuidas see on üles ehitatud (näiteks pealkirjad, lõigud, pildid,
-          lingid jms). HTML on veebilehe alus, millele lisatakse kujundus
-          CSS-iga ja funktsionaalsus JavaScriptiga.
+          märgistuskeel...
         </p>
-        <iframe width="560" height="315" 
+        <iframe 
           src="https://www.youtube.com/embed/qz0aGYrrlhU?si=jkLg8F2H9XYDr27V" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
-  </iframe>
+        </iframe>
       </section>
+
+      <section class="section">
+        <a href="https://voco.ee" target="_blank" rel="noopener">
+          <picture>
+            <source srcset="images/linnud.webp" type="image/webp">
+            <img src="images/linnud.jpg" alt="Pilt lindudest" loading="lazy">
+          </picture>
+        </a>
+      </section>
+
+      <section id="isik" class="section">
+        <div class="pilt-ja-tekst">
+          <a href="#kontakt">
+            <picture>
+              <source srcset="images/oskar.webp" type="image/webp">
+              <img src="images/oskar.jpg" alt="Hüppa kontaktini" loading="lazy">
+            </picture>
+          </a>
+          <div class="tekst">
+            <p class="nimi">Oskar Tallo</p>
+            <p class="elukoht">Kilingi-Nõmmest</p>
+          </div>
+        </div>
+      </section>
+
       <section id="kontakt" class="section">
         <h2>Kontakt</h2>
         <p>
-          Instagram -
-          <a href="https://www.instagram.com/oskartallo/">@oskartallo</a>
+          Instagram - <a href="https://www.instagram.com/oskartallo/">@oskartallo</a>
         </p>
         <p>
-          E-post -
-          <a href="mailto:oskartallo@voco.ee">oskartallo@voco.ee</a>
+          E-post - <a href="mailto:oskartallo@voco.ee">oskartallo@voco.ee</a>
         </p>
       </section>
-      <section>
+
+      <section class="section">
         <video src="videos/276624.mp4" controls autoplay muted loop>
           <source src="videos/276624.mp4" type="video/mp4" />
         </video>
       </section>
+
     </main>
 
-    <img src="images/oskar.jpg" alt="Oskari Pilt" loading="lazy"/>
-    <p class="nimi">Oskar Tallo</p>
-    <p class="elukoht">Kilingi-Nõmmest</p>
     <footer>Oskar Tallo 2025</footer>
   </body>
 </html>
