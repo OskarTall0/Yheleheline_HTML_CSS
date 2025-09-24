@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="et">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Õppeveeb HTML-i õppimiseks">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Õppeveeb HTML-i õppimiseks" />
     <title>Õppeveeb</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
     <a class="skip-link" href="#content">Liigu sisu juurde</a>
 
     <header>
@@ -16,6 +15,7 @@
       <nav aria-label="Põhinavigatsioon">
         <a href="#sissejuhatus" class="custom-button">Sissejuhatus</a>
         <a href="#teooria" class="custom-button">Teooria</a>
+        <a href="#kaardid" class="custom-button">Kaardid</a>
         <a href="#kontakt" class="custom-button">Kontakt</a>
       </nav>
       <div class="hero">
@@ -26,13 +26,21 @@
     </header>
 
     <main id="content">
-
       <section id="sissejuhatus" class="section">
         <h2>Sissejuhatus</h2>
         <h3>Mis on HTML?</h3>
         <p>
           HTML on veebilehtede põhiline keel, mida kasutatakse selleks, et
-          määrata lehe sisu ja struktuur...
+          määrata lehe sisu ja struktuur. HTML-i abil saab luua erinevaid
+          elemente nagu pealkirjad, lõigud, pildid, lingid, tabelid ja vormid.
+          See võimaldab veebilehtedel olla organiseeritud ja loogiliselt
+          struktureeritud, nii et nii inimesed kui ka otsingumootorid mõistavad,
+          kuidas sisu esitada. HTML on hüperteksti märgistuskeel (HyperText
+          Markup Language), mis tähendab, et tekstis saab luua lingitud
+          dokumente ja ressursse internetis. Tänu HTML-ile saavad arendajad luua
+          veebilehti, mis on semantiliselt korrektsed, ligipääsetavad ja
+          kergesti laiendatavad teiste tehnoloogiate, näiteks CSS-i ja
+          JavaScripti abil.
         </p>
       </section>
 
@@ -41,22 +49,24 @@
         <h3>HTML tähendus</h3>
         <p>
           HTML tähendab HyperText Markup Language, eesti keeles hüperteksti
-          märgistuskeel...
+          märgistuskeel. See on spetsiaalne keel, mis võimaldab veebilehti üles
+          ehitada märgendite ehk tagide abil. Hüperteksti osa võimaldab linkida
+          erinevaid dokumente, luues sujuva navigeerimise internetis.
         </p>
-        <iframe 
-          src="https://www.youtube.com/embed/qz0aGYrrlhU?si=jkLg8F2H9XYDr27V" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
+        <iframe
+          src="https://www.youtube.com/embed/qz0aGYrrlhU?si=jkLg8F2H9XYDr27V"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="youtube-video"
+        >
         </iframe>
       </section>
 
       <section class="section">
         <a href="https://voco.ee" target="_blank" rel="noopener">
           <picture>
-            <source srcset="images/linnud.webp" type="image/webp">
-            <img src="images/linnud.jpg" alt="Pilt lindudest" loading="lazy">
+            <img src="images/Voco.jpg" alt="Voco logo" loading="lazy" />
           </picture>
         </a>
       </section>
@@ -65,8 +75,12 @@
         <div class="pilt-ja-tekst">
           <a href="#kontakt">
             <picture>
-              <source srcset="images/oskar.webp" type="image/webp">
-              <img src="images/oskar.jpg" alt="Hüppa kontaktini" loading="lazy">
+              <source srcset="images/oskar.webp" type="image/webp" />
+              <img
+                src="images/oskar.jpg"
+                alt="Hüppa kontaktini"
+                loading="lazy"
+              />
             </picture>
           </a>
           <div class="tekst">
@@ -76,22 +90,71 @@
         </div>
       </section>
 
+      <section id="kaardid" class="section">
+        <h2>Õppeteemad</h2>
+        <div class="kaardid">
+          <div class="kaart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 128 128"
+              width="60"
+              height="60"
+              aria-hidden="true"
+            >
+              <path fill="#E44D26" d="M19 3l9 101 36 10 36-10 9-101z" />
+              <path fill="#F16529" d="M64 116l29-8 8-92H64z" />
+              <path
+                fill="#EBEBEB"
+                d="M64 66H45l-1-10h20V46H35l2 27h27zm0 26l-25-7-2-13h9l1 6 17 5z"
+              />
+              <path
+                fill="#fff"
+                d="M64 66V56h19l-2 20-17 5v11l25-7 3-27H64zm0-20V36h30l-1 10z"
+              />
+            </svg>
+            <h3>HTML</h3>
+            <p>Veebilehe sisu ja struktuuri loomine.</p>
+          </div>
+
+          <div class="kaart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 128 128"
+              width="60"
+              height="60"
+              aria-hidden="true"
+            >
+              <path fill="#1572B6" d="M19 3l9 101 36 10 36-10 9-101z" />
+              <path fill="#33A9DC" d="M64 116l29-8 8-92H64z" />
+              <path
+                fill="#fff"
+                d="M64 66H45l-1-10h20V46H35l2 27h27zm0 26l-25-7-2-13h9l1 6 17 5z"
+              />
+              <path
+                fill="#EBEBEB"
+                d="M64 66V56h19l-2 20-17 5v11l25-7 3-27H64z"
+              />
+            </svg>
+            <h3>CSS</h3>
+            <p>Lehe kujundamine ja stiilide lisamine.</p>
+          </div>
+        </div>
+      </section>
+
       <section id="kontakt" class="section">
         <h2>Kontakt</h2>
-        <p>
-          Instagram - <a href="https://www.instagram.com/oskartallo/">@oskartallo</a>
-        </p>
-        <p>
-          E-post - <a href="mailto:oskartallo@voco.ee">oskartallo@voco.ee</a>
-        </p>
+        <a
+          href="https://www.instagram.com/oskartallo/"
+          target="_blank"
+          rel="noopener"
+          >@oskartallo</a
+        >
+        <a href="mailto:oskartallo@voco.ee">oskartallo@voco.ee</a>
       </section>
 
       <section class="section">
-        <video src="videos/276624.mp4" controls autoplay muted loop>
-          <source src="videos/276624.mp4" type="video/mp4" />
-        </video>
+        <video src="Videos/Jarv.mp4" controls autoplay muted loop></video>
       </section>
-
     </main>
 
     <footer>Oskar Tallo 2025</footer>
